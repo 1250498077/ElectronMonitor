@@ -18,13 +18,12 @@ module.exports = {
     module: {
         rules: [
             {
-                // cnpm i babel-loader @babel/core @babel/preset-env -D
-                test: /\.jsx?$/,
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: [
-                    {
-                        loader: "happypack/loader?id=happyBabel"
-                    }
+                  {
+                    loader: "babel-loader"
+                  }
                 ]
             },
             {
