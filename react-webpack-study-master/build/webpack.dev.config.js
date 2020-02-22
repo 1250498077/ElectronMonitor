@@ -2,13 +2,12 @@ const path = require("path");
 const merge = require('webpack-merge')
 const commonConfig = require('./webpack.base.config.js')
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = merge(commonConfig, {
     mode: "development",
     entry: ["react-hot-loader/patch"],
-    devtool: 'cheap-module-eval-soure-map',
+    devtool: 'cheap-module-source-map',
     output: {
         // 输出目录
         path: path.resolve(__dirname, "../dist"),
@@ -25,7 +24,6 @@ module.exports = merge(commonConfig, {
                 VUEP_BASE_URL: '/'
             }
         }),
-        new ExtractTextPlugin('[name].css')
     ],
     resolve: {
         alias: {
@@ -46,9 +44,9 @@ module.exports = merge(commonConfig, {
         host: "localhost", // 可以使用手机访问
         port: 3000,
         historyApiFallback: true, //  该选项的作用所有的404都连接到index.html
-        proxy: {
-            // 代理到后端的服务地址
-            "/api": "http://localhost:3000"
-        }
+        // proxy: {
+        //     // 代理到后端的服务地址
+        //     "/api": "http://localhost:3000"
+        // }
     }
 });

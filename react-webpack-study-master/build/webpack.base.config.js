@@ -4,7 +4,6 @@ const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HappyPack = require('happypack');
 const os = require('os');
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length });
@@ -38,23 +37,13 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(less)$/,
-                use: ExtractTextPlugin.extract({
-                  fallback: 'style-loader',
-                  use: 'happypack/loader?id=less'
-                })
-            },
-            {
-                loader: 'less-loader',
-                options: {
-                    javascriptEnabled: true,
-                    globalVars: {
-                        'testcolor': 'red',    // ten可以是ten，也可以是@ten，效果一样，下同
-                    },
-                    modifyVars: {
-                        'primary-color': '#1DA57A'
-                        }
-                }
+                test: /\.(less|css)$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader", // 编译css
+                    "postcss-loader", // 使用 postcss 为 css 加上浏览器前缀
+                    "less-loader" // 编译less
+                ]
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)/,
@@ -108,7 +97,7 @@ module.exports = {
         // css单独提取
         new MiniCssExtractPlugin({
             filename: "[name].css",
-            chunkFilename: "[id].css"
+            chunkFilename: "[id].css" 
         }),
         new HappyPack({
             id: 'less',
@@ -117,21 +106,21 @@ module.exports = {
               {
                 loader: 'css-loader',
                 options: {
-                  importLoaders: 1,
-                  modules: true,
-                  localIdentName: '[local]___[hash:base64:5]'
+                    importLoaders: 1,
+                    modules: true,
+                    localIdentName: '[local]___[hash:base64:5]'
                 }
               },
               'postcss-loader',
               {
                 loader: 'less-loader',
                 options: {
-                  modifyVars: {},
-                  javascriptEnabled: true
+                    modifyVars: { '@primary-color': '"#2d5da7"', '@CDN_BASE': '""' },
+                    javascriptEnabled: true
                 }
               }
             ],
-          })
+        })
     ],
     performance: false // 关闭性能提示
 };

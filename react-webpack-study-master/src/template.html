@@ -1,16 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.options.publicPath%>assets/css/antd.min.css"/>
+  <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_556271_0tgbsdu2rwil.css"/>
+  <script type="text/javascript" src="<%=htmlWebpackPlugin.options.publicPath%>assets/js/browser-polyfill.js"></script>
+  <!--[if lte IE 10]>
+      <script
+        src="https://as.alipayobjects.com/g/component/??console-polyfill/0.2.2/index.js,media-match/2.0.2/media.match.min.js"></script>
+  <![endif]-->
+  <!--  kindEditor -->
+  <script type="text/javascript" src='<%=htmlWebpackPlugin.options.publicPath%>assets/kindEditor/kindeditor-all.js'></script>
+  <!--  kindEditor -->
+  <!-- 高德地图 -->
+  <script type="text/javascript" src="//webapi.amap.com/maps?v=1.4.10&key=c57addad5dd1a42fdc55ef385995c99f&plugin=AMap.TruckDriving&plugin=AMap.Geocoder"></script>
+  <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+  <!-- 高德地图 -->
+
+  <!-- echarts -->
+  <script src="https://cdn.bootcss.com/echarts/4.1.0-release/echarts.min.js"></script>
+  <script src="<%=htmlWebpackPlugin.options.publicPath%>assets/map/js/china.js"></script>
+<!--   <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script> -->
+  <!-- echarts -->
+  <title>新一代管理端</title>
 </head>
-
-<body>
-    <div id="app"></div>
-    <script type="text/javascript" src="/src/js/dll/vendor.dll.js"></script>
+<body class='skin_1'>
+  <div id="app"></div>
+  <script src="<%=htmlWebpackPlugin.options.publicPath%>dll/vendor.js"></script>
 </body>
-
 </html>
