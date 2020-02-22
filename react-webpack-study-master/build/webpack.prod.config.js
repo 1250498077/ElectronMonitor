@@ -7,6 +7,7 @@ const PurifyCSS = require('purifycss-webpack')
 const glob = require('glob-all')
 const WorkboxPlugin = require('workbox-webpack-plugin') // 引入 PWA 插件
 
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = merge(commonConfig, {
     mode: "production",
@@ -55,6 +56,7 @@ module.exports = merge(commonConfig, {
         }),
         new webpack.DllReferencePlugin({
             manifest: path.resolve(__dirname, '..', 'dll/jquery-manifest.json')
-        })
+        }),
+        new ExtractTextPlugin('[name].css?[hash]')
     ]
 });

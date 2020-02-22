@@ -9,6 +9,8 @@
       {
           "legacy": true
       }
-    ]
+    ],
+     // 解析箭头函数
+     "@babel/plugin-proposal-class-properties"
   ]
 }

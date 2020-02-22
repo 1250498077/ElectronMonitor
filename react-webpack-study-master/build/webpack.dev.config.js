@@ -2,6 +2,7 @@ const path = require("path");
 const merge = require('webpack-merge')
 const commonConfig = require('./webpack.base.config.js')
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = merge(commonConfig, {
@@ -23,7 +24,8 @@ module.exports = merge(commonConfig, {
             'process.env': {
                 VUEP_BASE_URL: '/'
             }
-        })
+        }),
+        new ExtractTextPlugin('[name].css')
     ],
     resolve: {
         alias: {

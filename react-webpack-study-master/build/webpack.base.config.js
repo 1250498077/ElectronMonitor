@@ -4,9 +4,11 @@ const webpack = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HappyPack = require('happypack');
 const os = require('os');
 const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length });
+
 
 module.exports = {
     entry: ["./src/index.js"],
@@ -34,6 +36,25 @@ module.exports = {
                     "postcss-loader", // 使用 postcss 为 css 加上浏览器前缀
                     "sass-loader" // 编译scss
                 ]
+            },
+            {
+                test: /\.(less)$/,
+                use: ExtractTextPlugin.extract({
+                  fallback: 'style-loader',
+                  use: 'happypack/loader?id=less'
+                })
+            },
+            {
+                loader: 'less-loader',
+                options: {
+                    javascriptEnabled: true,
+                    globalVars: {
+                        'testcolor': 'red',    // ten可以是ten，也可以是@ten，效果一样，下同
+                    },
+                    modifyVars: {
+                        'primary-color': '#1DA57A'
+                        }
+                }
             },
             {
                 test: /\.(png|jpg|jpeg|gif|svg)/,
@@ -88,7 +109,29 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
-        })
+        }),
+        new HappyPack({
+            id: 'less',
+            threads: 4,
+            loaders: [
+              {
+                loader: 'css-loader',
+                options: {
+                  importLoaders: 1,
+                  modules: true,
+                  localIdentName: '[local]___[hash:base64:5]'
+                }
+              },
+              'postcss-loader',
+              {
+                loader: 'less-loader',
+                options: {
+                  modifyVars: {},
+                  javascriptEnabled: true
+                }
+              }
+            ],
+          })
     ],
     performance: false // 关闭性能提示
 };
