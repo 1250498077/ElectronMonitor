@@ -1,0 +1,40 @@
+@import '~assets/css/common.less';
+.org {
+  float: left;
+  color: #666;
+  position: relative;
+  height: @header_height;
+  line-height: @header_height;
+  display: table;
+  .tableCell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  a {
+    color: #666;
+    &:hover {
+      color: red;
+    }
+  }
+  :global {
+    .ant-select .ant-select-selection--single {
+      color: #666;
+      background: transparent;
+      border: none;
+    }
+    .ant-select-arrow {
+      color: #666;
+    }
+    .ant-dropdown-link i {
+      padding-top: 6px;
+      margin-right: 5px;
+      float: right;
+    }
+  }
+}
+
+.orgDropdown {
+  right: 30px !important;
+  left: auto !important;
+  width: fit-content;
+}

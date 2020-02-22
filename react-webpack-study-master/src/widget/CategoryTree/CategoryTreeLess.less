@@ -1,0 +1,106 @@
+/**
+ * @(#)CategoryTeeLess.less 0.5.1 2018-11-12
+ * Copyright (c) 2017, YUNXI. All rights reserved.
+ * YUNXI PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
+@import '~assets/css/common.less';
+
+@color-grey: #e5e5e5;
+
+.treeWrap{
+  .fontSize_6;
+}
+
+.tree {
+  overflow: auto;
+  .fontSize_6;
+  :global{
+    .ant-tree{
+      .fontSize_6;
+    }
+  }
+}
+
+.contentLeft {
+  width: 390px;
+  border-right: 1px solid @color-grey;
+  background: #FBFBFB;
+  :global {
+    .ant-tree.ant-tree-show-line li span.ant-tree-switcher {
+      background: #FBFBFB;
+    }
+  }
+  .area1 {
+    padding: 16px 16px 8px 16px;
+    border-bottom: 1px solid @color-grey;
+  }
+  .area2 {
+    padding: 8px 16px 16px 16px;
+  }
+}
+
+.conetentRight {
+  padding: 16px;
+}
+
+.content {
+  border: 1px solid @color-grey;
+  border-radius: 4px;
+  background: white;
+}
+
+.btnContent {
+  .btnFirst {
+    border-right: none;
+    border-radius: 4px 0px 0 4px;
+  }
+  .btn {
+    border-radius: 0px 4px 4px 0;
+  }
+  :global {
+    .ant-btn {
+      height: 24px;
+      padding: 0 8px;
+    }
+    i {
+      color: @uiColor_1;
+    }
+  }
+}
+
+.pagination {
+  :global ul.ant-pagination {
+    margin-right: 0;
+  }
+}
+
+// 浮层操作栏
+.treeTitle{
+  height:32px;
+  line-height: 32px;
+  width: 100%;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  z-index: 99;
+  &:hover{
+    color: @uiColor_25;
+    background: #E0E0E0;
+    left: -250px;
+    padding-left: 250px;
+  }
+  &:hover .treeTitleHover{
+    display: block;
+    // width:150%;
+  }
+  .treeTitleHover{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    display: none;
+    span {
+      float: right;
+      margin-right:10px; 
+    }
+  }
+}

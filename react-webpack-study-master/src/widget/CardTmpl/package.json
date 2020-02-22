@@ -1,0 +1,8 @@
+{
+  "name": "CardTmpl",
+  "version": "1.0.0",
+  "description": "卡片模板",
+  "main": "CardTmplView.js",
+  "author": "chen.dahai",
+  "license": "MIT"
+}

@@ -1,0 +1,19 @@
+{
+  "resultCode": 0,
+  "resultMsg": "请求成功",
+  "data": {
+    "pageNum": 1,
+    "pageSize": 10,
+    "pages": 1,
+    "total": 17,
+    "list": [{
+        "name": "xxx科技有限公司",
+        "code": 20
+      },
+      {
+        "name": "xxx科技有限公司",
+        "code": 18
+      }
+    ]
+  }
+}

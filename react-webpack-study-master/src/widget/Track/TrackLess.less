@@ -1,0 +1,50 @@
+.right {
+  display: inline-block;
+  width: 265px;
+  float: right;
+  margin-top: 80px;
+  :global .ant-form-item-label label {
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+  }
+}
+
+.visible{
+  // visibility: visible;
+  display: block;
+}
+
+.hide{
+  // visibility: hidden;
+  display: none;
+}
+
+.trackInfo{
+  border: solid 1px #EEE;
+  width: 1000px;
+  height: 500px;
+  position: absolute; 
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;    /* 有了这个就自动居中了 */
+  z-index: 9999;
+  background: #FFF;
+  .title{
+    .leftText{
+      float: left;
+      margin: 8px 0 0 10px;
+    }
+    .rightBtn{
+      float: right;
+      margin: 8px 10px 0 0;
+      &:hover{
+        color: #CCC;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

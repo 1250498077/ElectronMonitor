@@ -1,0 +1,47 @@
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderInfo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 900px;
+}
+.orderInfoItem {
+  display: flex;
+  align-items: flex-start;
+  width: 300px;
+  padding-top: 10px;
+}
+.waterMarkClass {
+
+}
+.tableCon{
+  width:100%;
+  // 单元格之间的距离
+  border-spacing: 0;
+  // 合并边框
+  border-collapse: collapse;
+  margin-top: 15px;
+
+  th,td{
+    border:1px solid #000;
+    font-weight: 800;
+    text-align: center;
+    font-size: 13px;
+    padding: 3px;
+    min-width: 40px;
+  }
+  tbody{
+    border-right:2px solid #000;
+  }
+  tfoot{
+    td{
+      font-size: 12px;
+    }
+  }
+}

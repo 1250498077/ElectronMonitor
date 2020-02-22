@@ -1,0 +1,25 @@
+{
+  "resultCode": 0,
+  "resultMsg": "请求成功",
+  "data": {
+    "user_name": "令狐冲",
+    "sex": "1",
+    "hoby": "1,3",
+    "dept": "2",
+    "age": 20,
+    "height": 175,
+    "weight": 120,
+    "birth_date": "2018-05-28",
+    "avatar": "https://www.baidu.com/img/bd_logo1.png?qua=high",
+    "resume": "这是自我介绍",
+    "orgName": "0-0-2",
+    "isParty": true,
+    "isRead": true,
+    "isActive": true,
+    "groups": "zhejiang,hangzhou,xihu",
+    "remark": "<h1>这是备注</h1>",
+    "inYearMonth": "2019-03",
+    "projectPeriod": "2019-03-20,2019-03-24",
+    "safe": "这里是安全注意事项的内容"
+  }
+}

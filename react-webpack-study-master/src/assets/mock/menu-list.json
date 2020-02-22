@@ -1,0 +1,224 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+    "list": [
+      {
+        "key": "menu_item_1",
+        "name": "首页",
+        "icon": "home",
+        "value": "1",
+        "url": "/"
+      },
+      {
+        "key": "menu_item_2",
+        "name": "组件演示",
+        "icon": "book",
+        "value": "2",
+        "children": [
+          {
+            "key": "menu_item_21",
+            "name": "基本组件 8",
+            "icon": "coffee",
+            "value": "21",
+            "children": [
+              {
+                "key": "menu_item_211",
+                "name": "富文本组件",
+                "icon": "setting",
+                "url": "/editor?a=1&b=2",
+                "value": "211"
+              },
+              {
+                "key": "menu_item_212",
+                "name": "上传组件",
+                "icon": "upload",
+                "url": "/upload",
+                "value": "212"
+              },
+              {
+                "key": "menu_item_213",
+                "name": "面板组件",
+                "icon": "usb",
+                "url": "/panel",
+                "value": "213"
+              },
+              {
+                "key": "menu_item_214",
+                "name": "图片放大镜",
+                "icon": "picture",
+                "url": "/boost",
+                "value": "214"
+              },
+              {
+                "key": "menu_item_215",
+                "name": "地图组件",
+                "icon": "inbox",
+                "url": "/map",
+                "value": "215"
+              },
+              {
+                "key": "menu_item_216",
+                "name": "右侧边栏组件",
+                "icon": "desktop",
+                "url": "/sider_panel",
+                "value": "216"
+              },
+              {
+                "key": "menu_item_217",
+                "name": "三级联动组件",
+                "icon": "appstore",
+                "url": "/three_level",
+                "value": "217"
+              },
+              {
+                "key": "menu_item_218",
+                "name": "打印组件",
+                "icon": "check-square",
+                "url": "/print",
+                "value": "218"
+              }
+            ]
+          },
+          {
+            "key": "menu_item_22",
+            "name": "表格组件 4",
+            "icon": "table",
+            "value": "22",
+            "children": [
+              {
+                "key": "menu_item_221",
+                "name": "列表组件",
+                "icon": "dollar",
+                "url": "/emp_list?c=1&d=2",
+                "value": "221"
+              },
+              {
+                "key": "menu_item_222",
+                "name": "简易表格",
+                "icon": "dashboard",
+                "url": "/simple_table",
+                "value": "222"
+              },
+              {
+                "key": "menu_item_223",
+                "name": "可编辑表格",
+                "icon": "edit",
+                "url": "/edit_table",
+                "value": "223"
+              },
+              {
+                "key": "menu_item_224",
+                "name": "单选表格组件",
+                "icon": "heart",
+                "url": "/radio_table",
+                "value": "224"
+              }
+            ]
+          },
+          {
+            "key": "menu_item_23",
+            "name": "树组件 3",
+            "icon": "smile",
+            "value": "23",
+            "children": [
+              {
+                "key": "menu_item_231",
+                "name": "类目树组件",
+                "icon": "fork",
+                "url": "/category",
+                "value": "231"
+              },
+              {
+                "key": "menu_item_232",
+                "name": "树形穿梭框",
+                "icon": "read",
+                "url": "/tree_transfer",
+                "value": "232"
+              },
+              {
+                "key": "menu_item_233",
+                "name": "多级树目录",
+                "icon": "euro",
+                "url": "/tree",
+                "value": "233"
+              }
+            ]
+          },
+          {
+            "key": "menu_item_24",
+            "name": "扩展组件 4",
+            "icon": "phone",
+            "value": "24",
+            "children": [
+              {
+                "key": "menu_item_241",
+                "name": "千分位组件",
+                "icon": "select",
+                "url": "/thousand_bit",
+                "value": "241"
+              },
+              {
+                "key": "menu_item_242",
+                "name": "弹出选择框",
+                "icon": "meh",
+                "url": "/popup_select",
+                "value": "242"
+              },
+              {
+                "key": "menu_item_243",
+                "name": "右键菜单",
+                "icon": "meh",
+                "url": "/context_menu",
+                "value": "243"
+              },
+              {
+                "key": "menu_item_244",
+                "name": "图片裁剪",
+                "icon": "meh",
+                "url": "/img_cutting",
+                "value": "244"
+              },
+              {
+                "key": "menu_item_245",
+                "name": "剪贴板组件",
+                "icon": "meh",
+                "url": "/clipboard",
+                "value": "245"
+              }
+            ]
+          },
+          {
+            "key": "menu_item_25",
+            "name": "表单组件 5",
+            "icon": "phone",
+            "value": "25",
+            "children": [
+              {
+                "key": "251",
+                "name": "卡片模板",
+                "icon": "meh",
+                "url": "/user_list",
+                "value": "251"
+              },
+              {
+                "key": "252",
+                "name": "输入框扩展",
+                "icon": "meh",
+                "url": "/input_ext",
+                "value": "252"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "menu_item_3",
+        "name": "示例",
+        "icon": "book",
+        "value": "3",
+        "url": "/hello"
+      }
+    ]
+  }
+}

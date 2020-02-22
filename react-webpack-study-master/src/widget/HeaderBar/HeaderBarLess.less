@@ -1,0 +1,86 @@
+@import '~assets/css/common.less';
+
+.tophead {
+  height: @header_height;
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  z-index: 300;
+  margin-left: @sider_width;
+  width: calc(~'100vw - @{sider_width}');
+  font-size: 14px;
+  .headLeft {
+    float: left;
+    height: @header_height;
+    i{
+      margin-top: 16px;
+      float: left;
+    }
+    .headTitle {
+      width: @sider_width;
+      color: #001529;
+      font-weight: normal;
+      display: inline-block;
+      .text{
+        line-height: @header_height;
+      }
+    }
+  }
+  .headRight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: @header_height;
+    width: 700px;
+    .right{
+      float: right;
+    }
+    .table{
+      display: table;
+    }
+    .row{
+      display: table-row;
+      float: left;
+    }
+    .cell{
+      display: table-cell;
+    }
+    .user {
+      height: @header_height;
+      line-height: @header_height;
+      float: left;
+      color: white;
+      img {
+        width: 32px;
+        height: 32px;
+        margin-top: 9px;
+        border-radius: 50%;
+        float: left;
+      }
+      a {
+        display: inline-block;
+        padding-right: 24px;
+        max-width: 240px;
+        color: #999;
+        margin-left: 4px;
+        float: left;
+      }
+       :global .ant-dropdown-link i {
+        padding-top: 6px;
+        top: 16px;
+        margin-left: 5px;
+        font-size: 16px;
+        color: #333;
+      }
+    }
+    .padRight{
+      padding-right: 10px;
+    }
+    .padLeft{
+      border-left: solid 1px #EEE;
+      padding-left: 10px;
+    }
+  }
+}

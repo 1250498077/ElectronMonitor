@@ -1,0 +1,83 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+    "list":{
+      "/": {
+        "name": "首页"
+      },
+      "/editor": {
+        "name": "富文本编辑器"
+      },
+      "/emp_list": {
+        "name": "员工列表"
+      },
+      "/upload": {
+        "name": "上传组件"
+      },
+      "/simple_table": {
+        "name": "简易表格"
+      },
+      "/edit_table": {
+        "name": "可编辑表格"
+      },
+      "/panel": {
+        "name": "面板组件"
+      },
+      "/category": {
+        "name": "类目树组件"
+      },
+      "/boost": {
+        "name": "图片放大镜"
+      },
+      "/map": {
+        "name": "地图组件"
+      },
+      "/sider_panel": {
+        "name": "右侧边栏组件"
+      },
+      "/radio_table": {
+        "name": "单选表格组件"
+      },
+      "/three_level": {
+        "name": "三级联动组件"
+      },
+      "/thousand_bit": {
+        "name": "千分位组件"
+      },
+      "/tree_transfer": {
+        "name": "树形穿梭框"
+      },
+      "/print": {
+        "name": "打印组件"
+      },
+      "/popup_select": {
+        "name": "弹出选择框"
+      },
+      "/tree": {
+        "name": "多级树目录"
+      },
+      "/context_menu": {
+        "name": "右键菜单"
+      },
+      "/img_cutting": {
+        "name": "图片裁剪"
+      },
+      "/clipboard": {
+        "name": "剪贴板组件"
+      },
+      "/hello": {
+        "name": "示例"
+      },
+      "/user_list": {
+        "name": "用户列表"
+      },
+      "/user_edit": {
+        "name": "用户编辑"
+      },
+      "/input_ext": {
+        "name": "输入框扩展"
+      }
+    }
+  }
+}

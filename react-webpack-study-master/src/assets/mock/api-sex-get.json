@@ -1,0 +1,18 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data": {
+    "list": [{
+        "label": "男",
+        "value": "1"
+      },
+      {
+        "label": "女",
+        "value": "2"
+      }, {
+        "label": "不明",
+        "value": "3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+// 其中assets文件夹已经做了webpack别名配置，不需要再使用../../访问，直接加个波浪线
+@import "~assets/css/common.less";
+.hello{
+  width: 300px;
+  height: 200px;
+  // 样式中引入图片，必须加@{CDN_BASE}前缀
+  background: url('@{CDN_BASE}/assets/imgs/desktop.png');
+}
+
+.text{
+  color: #FFF;
+  font-weight: bold;
+}

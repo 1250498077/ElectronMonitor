@@ -1,0 +1,164 @@
+@import "~assets/css/common.less";
+
+.border{
+  border: solid 1px #EEE;  
+}
+
+.tgIcon{
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size:16px 16px;
+  background-repeat:no-repeat;
+}
+
+.collapse {
+  height: 45px;
+  overflow: hidden;
+}
+
+.collapseBtn {
+  height: 32px;
+  margin-left: 8px;
+  line-height: 32px;
+}
+
+.btnContent {
+  min-height: 32px;
+}
+
+.searchBox {
+  position: relative;
+  padding: 16px 16px 16px 8px;
+  margin-bottom: 16px;
+  :global {
+    .ant-btn {
+      margin-left: 16px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+  .positionBtn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+}
+
+// 可折叠面板
+.collapsePanel{
+  padding:0 !important;
+  .border;
+  :global{
+    dt{
+      line-height: 40px; padding:0 16px; .fontSize_3; .fontColor_2;
+      background: @uiColor_7; border-bottom: 1px @uiColor_7 solid;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      span{
+        float: right; .fontSize_6; .fontColor_3;
+        cursor: pointer;
+        i{transition:0.4s;}
+      }
+    }
+    dd{
+      transition: 0.4s;
+      overflow: hidden;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+    dd.slideHide{
+      height: 0;
+      padding: 0;
+      padding-bottom: 4px;
+      transition: 0.4s;
+    }
+    dt.slideHide{
+      i{
+        transform: rotate(180deg);
+        transition:0.4s;
+        position: relative; top:-2px;
+      }
+    }
+  }
+}
+
+
+// 蓝色信息面板
+.infoPanel {
+  border-radius: 4px;
+  background: @uiColor_2;
+  border:@uiColor_1_active solid 1px;
+  .fontSize_6;
+
+  p{
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    height: 16px;
+    overflow: hidden;
+  }
+
+  .button {
+    float: right;
+    height: 16px;
+    margin-left: 8px;
+    line-height: 16px;
+  }
+
+  // 展开
+  .zhankai{
+    .tgIcon;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAZklEQVQ4jWNgGIagfW0DVvH+9QI45TAM6Fx/HkNz5/r1DJ3r+4l3BcwQkjWjG0Ky5q718xm61hsgGdIPFTdg6Fo/nwib1zswdK5/DzcEphnimgAinY9kCMma0Q0hSzOqIWRqHjkAANjkRbFY8fJKAAAAAElFTkSuQmCC);
+    &:hover{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAdklEQVQ4jWNgGH6g8eTtBmziDefvC+CSwzCg+fS98+iam07fXd90+m4/0a6AGUKyZnRDSNbcdObu/IZTtwxghsA0N5y6ZdB05u58ggY0nL7t0HT67nuYITDNzafvnW8+eSeAKFcgG0KyZnRDyNKMbAjZmkcQAADbEGw5a9XIqQAAAABJRU5ErkJggg==);
+    }
+  }
+
+  // 收起
+  .shouqi{
+    .tgIcon;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAk0lEQVQ4jd2QQQ3DMAxFP4RAGIRCKIRBGIRB6C1yLoYwBNWDMAiDEAijsEOUaFE1Zd2t88ny13uyLf15OUFO+B1O3GXk/RInyEBxXWRcZTy+l1TY8Darkt1w5CLjXPp1GUsMf4NnGVnGU5G5SRK38SYVTkyKnDrJ8BeJSUZuQBH2kiFc795mA0n59hbuJf4xP2a9ADRsW4AP5HD9AAAAAElFTkSuQmCC);
+    &:hover{
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAApElEQVQ4jd3QwQ3CMAxAUY/QERihI3QERmCEjuC6A2QERmAEjihxpNybuh6BFThQS6i0CuUGPsb6T0kA/nswaYVJq69j4ulKUXQ38ozl0vmMxNL2PKWPEYuJxdmZIbtjCuOp9+MRAKDzGYsIsTiLkXNDUZRY7si5MYSinMs3mWMMQ403Pbwixb/AMNQURS0AAFgixdje/bYrIcTSrsULxG3tf3Qe8eOPOVR7/mcAAAAASUVORK5CYII=);
+    }
+  }
+}
+
+// 卡片面板
+.cardPanel{
+  .border;
+  .title {
+    .fontColor_1;
+    position: relative;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #666;
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 9px;
+      width: 3px;
+      height: 14px;
+      background-color: @uiColor_1;
+      border-radius: 5px;
+    }
+  }
+}
+
+// 公共padding
+.pad16{
+  padding: 16px;
+}
+
+.pad8{
+  padding: 8;
+}

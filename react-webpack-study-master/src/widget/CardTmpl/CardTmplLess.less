@@ -1,0 +1,51 @@
+@import "~assets/css/common.less";
+
+@mg2r: 8px;
+
+:global {
+  .yx-edit-form {
+    .ant-form-item-control-wrapper{
+      height: 48px;
+    }
+    .editor{
+      overflow: hidden;
+      margin-bottom: 20px!important;
+      :global {
+          .ant-form-item-control-wrapper{
+              height:100%!important;
+          }
+      }
+      .editor-content{
+        border: 1px solid #bfbfbf;
+        // box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        overflow-y:auto;
+      }
+    }
+    // 功能按钮
+    .yx-func-button{
+      padding-left: 4px;
+      button{
+        margin-right: @mg2r;
+        min-width: 80px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+    //列表页搜索部分
+    // 避免出现错误提示时换行
+   .ant-form-item-control-wrapper{
+      height: 48px;
+    }
+    .has-error .ant-form-explain{
+      float: none;
+      text-align: left;
+    }
+    .ant-row .yx-right-btn{
+      &:last-child{
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+/**
+ * @(#)productDetailStyle.less 0.1.0 2017-12-14
+ * Copyright (c) 2017, YUNXI. All rights reserved.
+ * YUNXI PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
+ */
+@import "~assets/css/common";
+
+
+// 常见详情页布局
+.tableDetail {
+  .fontSize_6;
+  :global{
+    .ant-row {
+      &:nth-child(1) {
+        border-top: 1px @uiColor_7 solid;
+      }
+
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      border-bottom: 1px @uiColor_7 solid;
+
+      .col {
+        position: static;
+        height: 100%;
+
+        .leftName {
+          width: 104px;
+          padding: 10px 8px 10px 0;
+          height: 100%;
+          text-align: right;
+          .fontColor_2;
+          float: left;
+          background: @uiColor_27;
+          position: absolute;
+          top: 0;
+        }
+
+        .rightCont {
+          padding: 10px 8px 10px 112px;
+        }
+      }
+    }
+
+    .ant-row.ant-form-item {
+      border: 0;
+      margin-bottom: 0;
+    }
+
+    .ant-form-explain {
+      margin-top: -8px;
+    }
+
+    textarea {
+      height: auto;
+      min-height: 66px;
+      max-height: 66px;
+      margin: 8px 0;
+    }
+
+    .leftNamek {
+      line-height: 32px;
+    }
+
+    .contentSize {
+      position: absolute;
+      right: 35px;
+      top: 54px;
+      line-height: 20px;
+      .fontColor_4
+    }
+
+    .statusSelect {
+      margin-left: 8px;
+      width: 80%;
+      position: relative;
+      top: -3px;
+    }
+
+    .ant-radio-group {
+      width: 100%;
+    }
+
+    .merColOne {
+      h3 {
+        margin-bottom: 13px;
+        .fontSize_4;
+        .fontColor_2;
+      }
+
+      h3:before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        height: 14px;
+        margin-right: 8px;
+        width: 3px;
+        background: @uiColor_1;
+        border-radius: 4px;
+      }
+
+      >div {
+        img {
+          max-width: 600px;
+          max-height: 600px;
+          border: 1px #F0F0F2 solid;
+          border-radius: 4px;
+          padding: 3px;
+        }
+      }
+    }
+  }
+}

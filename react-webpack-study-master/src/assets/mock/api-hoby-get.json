@@ -1,0 +1,28 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data":
+  {
+    "list": [
+    {
+      "label": "旅游",
+      "value": "1"
+    },
+    {
+      "label": "足球",
+      "value": "2"
+    },
+    {
+      "label": "兵兵球",
+      "value": "3"
+    },
+    {
+      "label": "橄榄球",
+      "value": "4"
+    },
+    {
+      "label": "羽毛球",
+      "value": "5"
+    }]
+  }
+}

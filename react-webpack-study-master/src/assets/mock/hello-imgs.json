@@ -1,0 +1,25 @@
+{
+  "resultCode": 0,
+  "resultMsg": "",
+  "data":
+  {
+    "pageNum": 1,
+    "pageSize": 10,
+    "pages": 1,
+    "total": 3,
+    "list": [
+      {
+        "url": "assets/imgs/mg/mg_1.gif",
+        "name": "打死你个盗图狗！"
+      },
+      {
+        "url": "assets/imgs/mg/mg_2.gif",
+        "name": "快给我点赞，我知道你是最棒的"
+      },
+      {
+        "url": "assets/imgs/mg/mg_3.gif",
+        "name": "无视你的存在"
+      }
+    ]
+  }
+}

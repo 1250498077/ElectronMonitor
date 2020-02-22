@@ -1,0 +1,37 @@
+@import '~assets/css/common.less';
+.notice {
+  float: left;
+  width: 100px;
+  height: @header_height;
+  line-height: @header_height;
+  i {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    left: 15px;
+  }
+  :global {
+    & .ant-carousel.ant-carousel-vertical {
+      width: 190px;
+      float: right;
+    }
+    & .slick-dots {
+      display: none!important;
+    }
+    & .slick-slide {}
+    a {
+      color: #fff;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 190px;
+      font-size: 12px;
+    }
+  }
+  .icon{
+    width: 50px;
+  }
+  .txt{
+    float: left;
+  }
+}
