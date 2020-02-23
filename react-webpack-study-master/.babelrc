@@ -1,21 +1,16 @@
 {
   "presets": [
-    [
-      "latest",
-      {
-        "loose": true,
-        "modules": false
-      }
-    ],
-    "react",
-    "es2015",
-    "stage-0"
+    "@babel/preset-env",
+    "@babel/preset-react"
   ],
-  // react-hot-loader在--hot基础上做了额外的处理，来保证状态可以存下来
   "plugins": [
-    "transform-decorators-legacy",
-    "transform-class-properties",
-    "transform-object-rest-spread",
-    ["import", { "libraryName": "antd", "style": false }]
+      "transform-omodule-variable",
+      ["@babel/plugin-proposal-decorators", { "legacy": true }],
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-export-default-from",
+      "@babel/plugin-proposal-export-namespace-from",
+      "@babel/plugin-transform-runtime",
+      ["react-hot-loader/babel"],
+      ["@babel/plugin-syntax-dynamic-import"]
   ]
 }

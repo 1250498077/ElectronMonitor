@@ -15,6 +15,7 @@ import zhCN from 'antd/lib/locale-provider/zh_CN';
 // 设置全局app对象
 window.app = {};
 
+
 // 渲染到DOM ID为app的节点上
 ReactDom.render(
   <LocaleProvider locale={zhCN}>

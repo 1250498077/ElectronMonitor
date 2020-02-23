@@ -46,10 +46,10 @@ import ContextMenuDemo from 'bundle-loader?lazy&name=ContextMenuDemoView!pages/D
 import ImgCuttingDemo from 'bundle-loader?lazy&name=ImgCuttingDemoView!pages/Demo/ImgCutting/ImgCuttingDemoView';
 // 剪贴板组件
 import ClipboardDemo from 'bundle-loader?lazy&name=ClipboardDemoView!pages/Demo/Clipboard/ClipboardDemoView';
-// 用户列表模块
-import UserList from 'bundle-loader?lazy&name=UserListView!pages/Demo/User/UserList/UserListView';
-// 用户编辑模块
-import UserEdit from 'bundle-loader?lazy&name=UserEditView!pages/Demo/User/UserEdit/UserEditView';
+// // 用户列表模块
+// import UserList from 'pages/Demo/User/UserList/UserListView';
+// // 用户编辑模块
+// import UserEdit from 'pages/Demo/User/UserEdit/UserEditView';
 // 示例视图组件
 import Hello from 'bundle-loader?lazy&name=HelloView!pages/Hello/HelloView';
 // 输入框扩展组件
